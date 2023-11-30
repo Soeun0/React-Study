@@ -10,4 +10,3 @@ function Post({author, body}) {
 }
 
 export default Post;
-

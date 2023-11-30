@@ -4,7 +4,7 @@ import { BiGame } from "react-icons/bi";
 
 import classes from './MainHeader.module.css';
 
-function MainHeader({ onCreatePost }) {
+function MainHeader() {
   return (
     <header className={classes.header}>
       <h1 className={classes.logo}>
@@ -12,10 +12,10 @@ function MainHeader({ onCreatePost }) {
         게임 게시판
       </h1>
       <p>
-        <button className={classes.button} onClick={onCreatePost}>
+        <a href="/create-post" className={classes.button}>
           <BiGame size={30} />
           게임 소개하기
-        </button>
+        </a>
       </p>
     </header>
   );
